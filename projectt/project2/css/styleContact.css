@@ -100,21 +100,18 @@ body {
   padding: 1em;
 }
 
-/* Add styles to the form container */
+
 .form-container {
   padding: 3em;
   margin: 3em;
-  font-family: 'Alata', sans-serif;
   border-radius: 20px;
   background-color: white;
   border: 0.2px solid #4d4d4d27;
   box-shadow: 0.5em 0.5em 1em #4d4d4d27;
 }
 
-/* Full-width input fields */
 .form-container input[type=text],
-.form-container input[type=email],
-.form-container input[type=password] {
+.form-container input[type=email] {
   font-size: 1rem;
   outline: none;
   border: 1px solid gray;
@@ -127,7 +124,6 @@ body {
 }
 
 
-
 .form-container textarea {
   font-size: 1rem;
   outline: none;
@@ -137,10 +133,9 @@ body {
   color: gray;
   transition: 0.1s ease-out;
   margin: 0px;
-  height: 177px;
-  width: 98%;
+  height: 190px;
+  width: -webkit-fill-available;
   resize: none;
-  font-family: 'Alata', sans-serif;
 }
 
 
@@ -177,13 +172,13 @@ body {
     color: #fff;
     cursor: pointer;
     font-weight: 800;
-  }
+}
   
 #submit:focus {
-    outline: none;
-  }
+	outline: none;
+}
   
-  #submit .circle {
+#submit .circle {
     position: absolute;
     background-color: #fff;
     width: 100px;
@@ -191,14 +186,14 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
     animation: scale 0.5s ease-out;
-  }
+}
   
-  @keyframes scale {
+@keyframes scale {
     to {
-      transform: translate(-50%, -50%) scale(3);
-      opacity: 0;
+		transform: translate(-50%, -50%) scale(3);
+		opacity: 0;
     }
-  }
+}
   
   
 
@@ -214,7 +209,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
+}
   
 .toast {
     background-color: #fff;
