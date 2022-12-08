@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+
+:root{
+	--footer-color: rgba(4,65,33,1);
+	--footer-word-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cantarell', sans-serif;
+  color: #222;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: #044121;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+
+
+
+.items{
+	align-items:center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.bikes{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.bike{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.bikeImg{
+	height: 360px;
+	width: 480x;
+}
+
+
+
+
+.overlay {
+    position: relative;
+    width: 480px;
+    height: 360px;
+}
+.overlay .hovered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+	border-radius: 10px;
+}
+.overlay:hover .hovered {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
+
+.overlay > .hovered{
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.overlay:hover> .hovered{
+	transform: translateY(0);
+}
+
+
+footer{
+	width: 100%;
+	bottom: 0px;
+	color: var(--footer-word-color);
+	opacity: 1;
+	background-color: var(--footer-color);
+	height: 2em;
+}
+
+.footerCopyright{
+	float: left;
+}
+
+.other{
+	float: right;
+}
+
+.other ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.other li{
+	display: inline-block;
+	margin-right: 55px;
+}
+
+.other a{
+	text-decoration: none;
+	color: var(--footer-word-color);
+}
+
+
+.fade{
+	background: linear-gradient(#ffffff, #044121);
+}

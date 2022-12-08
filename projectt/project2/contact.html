@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	   <link rel="stylesheet" href="./css/styleContact.css" />
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	   <title>MicycleRent</title>
+	</head>
+	
+	
+	<body>
+	
+		<nav class="nav" >
+		  <div class="container">
+			<h1 class="logo"><a href="./homepage.html">Micycle Rent</a></h1>
+				<ul>
+				  <li><a href="./homepage.html" class="current">Home</a></li>
+				  <li><a href="./about.html">About</a></li>
+				  <li><a href="./services.html">Services</a></li>
+				  <li><a href="./contact.html">Contact</a></li>
+				</ul>
+		  </div>
+		</nav>
+		
+		
+		<div class="contact-container">
+			<section class="contact-section">
+				<div id="contact">
+					<h2 class="title">For Further Questions / Concerns</h2>
+				</div>
+				
+				<section class="form-container">
+					
+						<div class="input">
+							<input placeholder="Name" type="text" name="name" id="name"/>
+						</div>
+						
+						<div class="input">
+							<input placeholder="Email" type="text" name="email" id="email"/>
+						</div>
+						
+						<div class="textbox">
+							<textarea name="text" id="text" cols="40" rows="5" placeholder="Message"></textarea>
+						</div>
+						
+						<button class="btn" id="submit" onClick="saveToFile()">Submit</button>
+					
+				</section>
+			</section>
+		</div>
+		
+		<div id="toast"></div>
+		
+		<div class="fade">
+			<p><br>
+			<br>
+			<br><br><br><br><br><br><br>
+			</p>
+		</div>
+		
+		
+		<script src="./scriptContact.js"></script>
+	</body>
+</html>
